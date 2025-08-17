@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum - Wilfredo Ortega</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        .cv-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .header-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #4a5568;
+            font-size: 0.875rem;
+        }
+        .section {
+            border-top: 2px solid #e5e7eb;
+            padding-top: 1.5rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1a202c;
+            text-transform: uppercase;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 2rem;
+        }
+        .job-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        .company-name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #4a5568;
+        }
+        .dates {
+            font-size: 0.875rem;
+            color: #718096;
+            font-style: italic;
+        }
+        .job-description {
+            margin-top: 0.75rem;
+        }
+        .job-description ul {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+        }
+        .job-description li {
+            margin-bottom: 0.5rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .skill-item {
+            background-color: #edf2f7;
+            color: #2d3748;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="cv-container">
+        <header class="header">
+            <div class="header-info">
+                <img src="./img.jpf" alt="Wilfredo Ortega" class="profile-image">
+                <h1 class="text-3xl font-bold mt-4">Wilfredo Ortega</h1>
+                <p class="text-xl text-gray-700 font-semibold">Ingeniero de Sistemas</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                    <span>wilfredo5653@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span>+58 412-200-33-14</span>
+                </div>
+                <div class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 10a8 8 0 018-8v8h8a8 8 0 01-8 8v-8H2z" />
+                    </svg>
+                    <a href="https://www.linkedin.com/in/wilfredoor/" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sección Sobre Mí -->
+        <section class="section">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p class="text-gray-600">
+                Ingeniero de Sistemas con más de 4 años de experiencia en desarrollo de software, con un enfoque en el backend y la arquitectura de APIs escalables. Competente en soluciones full-stack y en la optimización de sistemas. Poseo experiencia en la administración y optimización de bases de datos, con una trayectoria demostrada en liderazgo técnico de equipos y la integración de tecnologías para resolver desafíos de negocio.
+            </p>
+        </section>
+
+        <!-- Sección de Experiencia -->
+        <section class="section">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            
+            <div class="experience-item">
+                <h3 class="job-title">Desarrollador</h3>
+                <p class="company-name">Equipo Gerencial Con Solidez, Caracas, Venezuela</p>
+                <p class="dates">2025-</p>
+                <div class="job-description">
+                    <ul class="list-disc ml-5 text-gray-700">
+                        <li>Diseñé e implementé arquitecturas de APIs escalables para software empresarial, mejorando la integración de sistemas.</li>
+                        <li>Optimicé y escalé bases de datos en SQL Server, resultando en una mejora del rendimiento.</li>
+                        <li>Desarrollé software propietario de la empresa, desde la concepción hasta la implementación.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="job-title">Desarrollador web</h3>
+                <p class="company-name">IDA Software, Caracas, Venezuela</p>
+                <p class="dates">2024-2025</p>
+                <div class="job-description">
+                    <ul class="list-disc ml-5 text-gray-700">
+                        <li>Gestioné integraciones complejas con SAP Business One Service Layer, automatizando procesos clave del negocio.</li>
+                        <li>Creé Add-ons para SAP Business One utilizando UI API y DI API para extender su funcionalidad.</li>
+                        <li>Administré y optimicé bases de datos HanaDB y SQL Server.</li>
+                        <li>Realicé el mantenimiento integral de software, incluyendo la corrección de errores y la implementación de nuevas funcionalidades.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="job-title">Desarrollador web junior</h3>
+                <p class="company-name">Fibex Telecom, Caracas, Venezuela</p>
+                <p class="dates">2023-2024</p>
+                <div class="job-description">
+                    <ul class="list-disc ml-5 text-gray-700">
+                        <li>Implementé APIs REST para servicios de telecomunicaciones.</li>
+                        <li>Corregí errores en sistemas existentes para garantizar su operatividad.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <h3 class="job-title">Soporte técnico y Empleado administrativo</h3>
+                <p class="company-name">Universidad Santa María, Caracas, Venezuela</p>
+                <p class="dates">2018-2022</p>
+                <div class="job-description">
+                    <ul class="list-disc ml-5 text-gray-700">
+                        <li>Gestioné el mantenimiento y la distribución del correo electrónico para aproximadamente 11,000 usuarios activos.</li>
+                        <li>Participé en la implementación del sistema TernaNet en una institución educativa, asegurando una transición fluida.</li>
+                        <li>Proporcioné soporte técnico general y participé en el mantenimiento de la infraestructura tecnológica de la institución.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section class="section">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-list">
+                <span class="skill-item">.NET</span>
+                <span class="skill-item">Laravel</span>
+                <span class="skill-item">PostgreSQL</span>
+                <span class="skill-item">CSS</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">Bootstrap</span>
+                <span class="skill-item">SQL Server</span>
+                <span class="skill-item">GIT</span>
+                <span class="skill-item">Hana DB</span>
+                <span class="skill-item">Angular</span>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
